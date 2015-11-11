@@ -319,7 +319,7 @@
 				if ( exclude && attribute_name === exclude ) {
 					all_attributes_chosen = false;
 					current_settings[ attribute_name ] = '';
-				} else {
+				} else if ($(this).is(':checked')){
 					// Add to settings array
 					current_settings[ attribute_name ] = $checked_radio.val();
 				}
